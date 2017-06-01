@@ -12,7 +12,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using MySql.Data;
 using MySql.Data.MySqlClient;
 
 namespace ExercicioFormulario
@@ -26,27 +25,26 @@ namespace ExercicioFormulario
         {
             InitializeComponent();
         }
+        private void btnCadastrar_Click(object sender, RoutedEventArgs e)
+        {            
 
-        public void EnviarCadastro()
+        }
+
+        private void btnCadastrar_Click_1(object sender, RoutedEventArgs e)
         {
-            MySqlConnection cmd = new MySqlCommand
+            MySqlCommand cmd = new MySqlCommand()
             {
-                Connection = new MySqlConnetion("Server = localhost; Database = Cadastro; Uid = root; Pwd ="),                
+                Connection = new MySqlConnection("Server=127.0.0.1;Database=cadastro;Uid=root;Pwd="),
             };
-
+            cmd.CommandText = "INSERT INTO cadastro (Senha, Nome, Email) VALUES (@Senha, @Nome, @Email);";
             cmd.Parameters.AddWithValue("@Senha", txtSenha.Text);
-            cmd.Parameters.AddWithValue("@Nome", txtNome);
-            cmd.Parameters.AddWithValue("@Email", txtEmail);
-            cmd.CommandText = "INSERT INTO FormControle (Id, NomeAluno, Relatorio) VALUES (@Id, @NomeAluno, @Relatorio);";
+            cmd.Parameters.AddWithValue("@Nome", txtNome.Text);
+            cmd.Parameters.AddWithValue("@Email", txtEmail.Text);
             cmd.Connection.Open();
             cmd.ExecuteNonQuery();
             cmd.Connection.Close();
-            MessageBox.Show("Enviado");
-        }
+            MessageBox.Show("Cadastrado !");
 
-        private void btnEviar_Click(object sender, RoutedEventArgs e)
-        {
-            EnviarCadastro();
         }
         }
     
