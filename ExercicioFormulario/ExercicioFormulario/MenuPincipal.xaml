@@ -1,0 +1,24 @@
+﻿<Window x:Class="ExercicioFormulario.MenuPincipal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExercicioFormulario"
+        mc:Ignorable="d"
+        Title="MenuPincipal" Height="377.824" Width="419.247">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnCadastrar" Content="Cadastrar" HorizontalAlignment="Left" Margin="146,265,0,0" VerticalAlignment="Top" Width="132" Height="34" FontSize="22" Grid.Column="2" Click="btnCadastrar_Click"/>
+        <TextBox x:Name="Nome" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="37" Margin="143,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192"/>
+        <Button x:Name="btnEntrar" Content="Entrar" HorizontalAlignment="Left" Margin="146,226,0,0" VerticalAlignment="Top" Width="132" Height="34" FontSize="22" Grid.Column="2"/>
+        <Label Grid.ColumnSpan="3" Content="Nome" HorizontalAlignment="Left" Margin="68,110,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <TextBox x:Name="Nome_Copy" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="37" Margin="143,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192"/>
+        <Label Grid.ColumnSpan="3" Content="Senha" HorizontalAlignment="Left" Margin="69,167,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <Label Grid.ColumnSpan="3" Content="MENU" HorizontalAlignment="Left" Margin="150,39,0,0" VerticalAlignment="Top" FontSize="36" FontFamily="Aharoni"/>
+
+    </Grid>
+</Window>
