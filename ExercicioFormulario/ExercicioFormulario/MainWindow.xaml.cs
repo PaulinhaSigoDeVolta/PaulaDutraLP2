@@ -27,17 +27,17 @@ namespace ExercicioFormulario
         {
             InitializeComponent();
         }
-        private void btnCadastrar_Click(object sender, RoutedEventArgs e)
+        private void btnCadastrar1_Click(object sender, RoutedEventArgs e)
         {
             MySqlCommand cmd = new MySqlCommand()
             {
-                Connection = new MySqlConnection("Server=127.0.0.1;Database=cadastro;Uid=root;Pwd=root"),
-                CommandText = "INSERT INTO pessoa (Senha, Nome, Email) VALUES (@Senha, @Nome, @Email);"
+                Connection = new MySqlConnection("Server=localhost;Database=cadastro;Uid=root;Pwd="),
+                CommandText = "INSERT INTO pessoa (Matricula, Nome, Salario) VALUES (@Matricula, @Nome, @Salario);"
             };
            
-            cmd.Parameters.AddWithValue("@Senha", txtSenha.Text);
+            cmd.Parameters.AddWithValue("@Matricula", txtMatricula.Text);
             cmd.Parameters.AddWithValue("@Nome", txtNome.Text);
-            cmd.Parameters.AddWithValue("@Email", txtEmail.Text);
+            cmd.Parameters.AddWithValue("@Salario", txtSalario.Text);
             cmd.Connection.Open();
             cmd.ExecuteNonQuery();
             cmd.Connection.Close();

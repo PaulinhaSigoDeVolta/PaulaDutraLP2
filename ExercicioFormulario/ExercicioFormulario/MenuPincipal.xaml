@@ -5,20 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ExercicioFormulario"
         mc:Ignorable="d"
-        Title="MenuPincipal" Height="377.824" Width="419.247">
+        Title="MenuPincipal" Height="377.824" Width="447.93">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0*"/>
             <ColumnDefinition Width="0*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="btnCadastrar" Content="Cadastrar" HorizontalAlignment="Left" Margin="146,265,0,0" VerticalAlignment="Top" Width="132" Height="34" FontSize="22" Grid.Column="2" Click="btnCadastrar_Click"/>
-        <TextBox x:Name="Nome" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="37" Margin="143,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192"/>
-        <Button x:Name="btnEntrar" Content="Entrar" HorizontalAlignment="Left" Margin="146,226,0,0" VerticalAlignment="Top" Width="132" Height="34" FontSize="22" Grid.Column="2"/>
-        <Label Grid.ColumnSpan="3" Content="Nome" HorizontalAlignment="Left" Margin="68,110,0,0" VerticalAlignment="Top" FontSize="22"/>
-        <TextBox x:Name="Nome_Copy" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="37" Margin="143,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192"/>
-        <Label Grid.ColumnSpan="3" Content="Senha" HorizontalAlignment="Left" Margin="69,167,0,0" VerticalAlignment="Top" FontSize="22"/>
-        <Label Grid.ColumnSpan="3" Content="MENU" HorizontalAlignment="Left" Margin="150,39,0,0" VerticalAlignment="Top" FontSize="36" FontFamily="Aharoni"/>
+        <Button x:Name="btnCadastrar" Content="Cadastrar" HorizontalAlignment="Left" Margin="87,179,0,0" VerticalAlignment="Top" Width="132" Height="34" FontSize="22" Grid.Column="2" Click="btnCadastrar_Click"/>
+        <Button x:Name="btnAlterar" Content="Alterar" HorizontalAlignment="Left" Margin="224,179,0,0" VerticalAlignment="Top" Width="132" Height="34" FontSize="22" Grid.Column="2" Click="btnAlterar_Click"/>
+        <Label Grid.ColumnSpan="3" Content="PÁGINA DO GERENTE" HorizontalAlignment="Left" Margin="32,89,0,0" VerticalAlignment="Top" Height="47" Width="377" FontSize="36" FontFamily="Aharoni"/>
+        <Button x:Name="btnExcluir" Content="Excluir" HorizontalAlignment="Left" Margin="87,218,0,0" VerticalAlignment="Top" Width="132" Height="34" FontSize="22" Grid.Column="2" Click="btnExcluir_Click" />
+        <Button x:Name="btnConsultar" Content="Consultar" HorizontalAlignment="Left" Margin="224,218,0,0" VerticalAlignment="Top" Width="132" Height="34" FontSize="22" Grid.Column="2" Click="btnConsultar_Click" />
 
     </Grid>
 </Window>

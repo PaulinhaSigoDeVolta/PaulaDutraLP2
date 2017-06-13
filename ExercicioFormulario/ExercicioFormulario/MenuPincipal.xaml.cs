@@ -29,5 +29,24 @@ namespace ExercicioFormulario
             MainWindow Cadastrar = new MainWindow();
             Cadastrar.Show();
         }
+
+        private void btnAlterar_Click(object sender, RoutedEventArgs e)
+        {
+            Alterar A = new Alterar();
+            A.Show();
+                        
+        }
+
+        private void btnExcluir_Click(object sender, RoutedEventArgs e)
+        {
+            Excluir E = new Excluir();
+            E.Show();
+        }
+
+        private void btnConsultar_Click(object sender, RoutedEventArgs e)
+        {
+            Consultar C = new Consultar();
+            C.Show();
+        }
     }
 }
